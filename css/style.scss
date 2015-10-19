@@ -1,0 +1,508 @@
+@import "setup";
+
+// h1 {
+// 	font-family: 'Londrina Outline', cursive;
+// 	font-size: 70pt;
+// 	font-weight: lighter;
+// 	text-transform: uppercase;
+// 	letter-spacing: 15px;
+// 	color: blue;
+// }
+
+	body {
+		color: white;
+		font-family: 'Quicksand', sans-serif;
+		position: relative;
+	}
+
+	h1 {
+		font-family: 'Six Caps', sans-serif;
+		font-weight: lighter;
+		font-size: 250pt;
+		color: white;
+		letter-spacing: 50px;
+		margin: 0;
+		span {
+			font-size: 200pt;
+			position: absolute;
+			bottom: 10%;
+			right: 12%;
+		}
+
+	}
+
+	// @media all and (max-width: 940px) {
+	// 	h1 span {
+	// 		bottom: 10%;
+	// 		right: 5%;
+	// 	}
+	// 	h2.about {
+	// 		top: 5px;
+	// 		left: 0px;
+	// 	}
+
+	// 	.playerQuestions h2 {
+	// 		font-size: 35pt;
+	// 	}
+	// }
+
+	// @media (max-width: 480px) {
+	// 	h1 {
+	// 		font-size: 150pt;
+	// 		letter-spacing: 15px;
+	// 		margin-top: 25px;
+	// 		span {
+	// 			font-size: 150pt;
+	// 			top: 15%;
+	// 			right: 5%;
+	// 		}
+	// 	}
+
+	// 	h2.about {
+	// 		font-size: 50pt;
+	// 		top: 0;
+	// 		left: 0;
+	// 	}
+
+	// }
+
+	
+	section.main .flexMain{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.typeDrink {
+		background: #85a1fd;
+		background-size: cover;
+		height: 100vh;
+		margin: 0;
+		h2 {
+			font-family:'Quicksand', sans-serif;
+			margin: 0 auto;
+			font-weight: 500;
+			letter-spacing: 5px;
+			text-transform: uppercase;
+			font-size: 40pt;
+			border-bottom: 3px solid white;
+			width: 80%;
+			padding-top: 100px;
+			padding-bottom: 15px;
+			text-align: center;
+		}
+	}
+
+	.typeDrink button{
+		border: none;
+		background: none; //EXIST!!!!!!
+	}
+
+	.typeDrink button.startTheGame{
+		border: 3px solid white;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+	.typeDrink ul.drinkFlex{
+		margin-top: 50px;
+		padding-top: 50px;
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+	}
+
+
+
+	.typeDrink h3.choice{
+		text-align: center;
+		font-size: 20pt;
+		.bold {
+			font-weight: bold;
+			border-bottom: 2px solid white;
+		}
+	}
+
+	.flexButton {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.wrapper {
+		max-width: 1120px;
+		margin: 0 auto;
+	}
+
+	.main h2 {
+		font-family:'Quicksand', sans-serif;
+		text-transform: uppercase;
+		color: white;
+		font-weight: 500;
+		font-size: 18pt;
+		letter-spacing: 8px;		
+	}
+
+	.main {
+		background: #98CDFF;
+		margin: 0;
+		padding: 0;
+		background-size: cover;
+		height: 100vh;
+		position: relative;
+	}
+
+
+	.startButton, .nextButton, .startTheGame, .ready, .endGame {
+		font-family:'Quicksand', sans-serif;
+		text-transform: uppercase;
+		background: transparent;
+		color: white;
+		border: 3px solid white;
+		padding: 15px;
+		letter-spacing: 5px;
+		margin: 0 auto;
+		margin: 50px 0 20px 0;
+		border-radius: 10px;
+
+	}
+
+	button {
+    	outline-width: 0px;
+    	outline: none;
+	}
+
+	.startButton:hover {
+		background: white;
+		color: #98CDFF;
+	}
+	.startButton:hover a {
+		color: #98cdff;
+	}
+
+
+	.nextButton:hover {
+		background: white;
+		color: #98b5fe;
+	}
+
+	.nextButton:hover a {
+		color: #98b5fe;
+	}
+
+	.startTheGame:hover {
+		background: white;
+		color: #85a1fd;
+	}
+
+	.startTheGame:hover a {
+		color: #85a1fd;
+	}
+
+	.ready:hover {
+		background: white;
+		color: #9FD2FF;
+	}
+
+	.endGame:hover {
+		background: white;
+		color: #9FD2FF;
+	}
+	
+
+	a {
+		list-style-type: none;
+		text-decoration: none;
+		color: white;
+		padding: 25px;
+		cursor: pointer;
+		a:visited {
+			text-decoration: none;
+			color: white;
+		}
+	}
+
+	button.endGame {
+		
+	}
+
+	li {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.playerQuestions {
+		background: #98b5fe;
+		background-size: cover;
+		height: 100vh;
+		text-align: center;
+		h2 {
+			font-family:'Quicksand', sans-serif;
+			margin: 0 auto;
+			font-weight: 500;
+			letter-spacing: 5px;
+			text-transform: uppercase;
+			font-size: 40pt;
+			border-bottom: 3px solid white;
+			width: 60%;
+			padding-top: 100px;
+			padding-bottom: 15px;
+
+		}
+	}
+
+	h2.question {
+			font-family:'Quicksand', sans-serif;
+			font-weight: 500;
+			letter-spacing: 5px;
+			text-transform: uppercase;
+			font-size: 40pt;
+			border-bottom: 3px solid white;
+			padding-top: 100px;
+			padding-bottom: 15px;
+			margin: 0;
+
+		}
+
+	select{
+		background: white;
+		color: #98b5fe;
+		border: none;
+		font-size: 16pt;
+		width: 50px;
+		height: 50px;
+		margin-top: 50px;
+	}
+
+	.flexPlayer {
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+
+	}
+
+	.player {
+		font-weight: lighter;
+		font-size: 18pt;
+		input {
+			background-color: transparent;
+	   		border: 3px solid white;
+	    	border-radius: 10px;
+	    	height: 20px;
+	    	width: 160px;
+	    	color: white;
+	    	padding: 20px;
+	    	width: 250px;
+
+		}
+	}
+
+	
+	h3 {
+		font-weight: 500;
+		padding-top: 50px;
+	}
+	
+
+	input {
+		text-align: center;
+	}
+
+
+
+	input:focus {
+    	outline:none;
+	}	
+
+	svg {
+		height: 200px;
+		width: 200px;
+		fill: white;
+	}
+
+	.flexParent {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	section.questions {
+		background: #9FD2FF;
+		background-size: cover;
+		height: 100vh;
+	}
+
+
+	h2.question {
+		width: 75%;
+		font-size: 35pt;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	h2.about {
+		font-family: "Six Caps", sans-serif;
+		font-size: 60pt;
+		margin: 0;
+		position: absolute;
+		top: 10px;
+		left: 50px;
+		padding:0;
+		margin: 0;
+	}
+
+	.hiddenBox {
+		width: 400px;
+		background: white;
+		position: absolute;
+		top: 10%;
+		left: 35%;
+		right: 35%;
+		padding: 10px;
+		display: none;
+		p {
+			color: #98CDFF;
+			margin: 0;
+			font-weight: 600;
+			padding: 40px;
+			line-height: 30px;
+			text-align: center;
+			border: 4px solid #98CDFF;
+		}
+
+	}
+
+
+	i {
+		color: #98CDFF;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		font-size: 80pt;
+		cursor: pointer;
+	}
+
+	::-webkit-input-placeholder {
+	   color: white;
+	}
+
+	:-moz-placeholder { 
+	   color: white;  
+	}
+
+	::-moz-placeholder {  
+	   color: white;  
+	}
+
+	:-ms-input-placeholder {  
+	   color: white;  
+	}
+
+	h2.yourQuestion {
+		text-align: center;
+		font-weight: 500;
+		color: white;
+		font-size: 30pt;
+		padding: 25px;
+	}
+
+	.btn_game {
+		background: transparent;
+		padding: 20px;
+		border: 3px solid white;
+		color: white;
+		margin: 20px;
+		text-transform: uppercase;
+		border-radius: 10px;
+		letter-spacing: 5px;
+	}
+
+	.btn_game:hover {
+		background: white;
+		color: black;
+		border: 3px solid black;
+	}
+
+	.flexOptions {
+		display: flex;
+		justify-content: space-around;
+		width: 60%;
+		margin: 20px;
+		margin: 0 auto;
+	}
+	.box_right, .box_wrong, .box_stop {
+		position: absolute;
+		padding: 20px;
+		border-raduis: 5px;
+		top: 20%;
+		left: 35%;
+		right: 35%;
+		display: none;
+		text-align: center;
+		font-size: 20pt;
+		width: 400px;
+
+	}
+
+
+	.box_wrong {
+		background: tomato;
+		color: white;
+		border: 4px solid white;
+
+	}
+
+
+
+	.box_right {
+		background: #fd3bb6;
+		color: white;
+		border: 4px solid black;
+	}
+
+	.box_right button {
+		background: white;
+		color: black;
+		border: 3px solid black;
+		button:hover {
+			background: black;
+			color: white;
+		}
+	}
+
+	.box_right button:hover {
+		color: black;
+	}
+
+	.box_wrong button:hover {
+		color: tomato;
+	}
+
+	.box_stop {
+		background: white;
+		color: black;
+		border: 4px solid black;
+	}
+
+	h3.choice {
+		padding: 10px;
+	}
+
+	@media all and (max-width: 1024px) {
+		h1 span {
+			right: 10px;
+			bottom: 50px;
+		}
+
+	
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Buzzed!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link href='https://fonts.googleapis.com/css?family=Six+Caps' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="animate.css">
+</head>
+
+<body>
+	<!-- Main Section -->
+
+	<section class="main">
+		<h2 class="about animated infinite wobble"><a>?</a></h2>
+			<div class="hiddenBox">
+				<i class="fa fa-times-circle-o"></i>
+				<p>Buzzed! is your interactive guide to successful inebriation. First, select how many players, then your drink of choice, then get ready for some skill testing questions. Be careful, everytime your answer a question incorrectly a punishment will be served. *The makers of said guide cannot be held liable for any and all ill effects caused in relation to the use of said guide. This disclaimer includes, but is not limited to, death, dismemberment and late night taquito eating.</p>
+
+			</div>
+		<div class="wrapper flexMain">
+			<h1>Buzzed<span class="wobble animated">!</span></h1>
+			<h2>Your Favourite Drinking Game</h2>
+			<button class="startButton"><a href="#next1" class="1">Start</a></button>
+		</div>
+			<!-- <div id="message" title="hey, wrong answer!!" class="test_dialog">
+				<p>you have to drink</p>
+			</div> -->
+	</section>
+	<!-- Player Questions -->
+	<section class="playerQuestions" id="next1">
+		<div class="wrapper">
+			<h2>How Many Players?</h2>
+			<select name="numberPlayers" class="numOfPlayers">
+				<option value=""></option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+
+			<div class="playersName">
+				<form action="">
+					<div class="flexPlayer">
+						<div class="player player1">
+							<h3>Name of Drunk 1?</h3>
+							<input type="text" name="name1" class="player1">
+						</div>
+						<div class="player player2">
+							<h3>Name of Drunk 2?</h3>
+							<input type="text" name="name2" class="player2">
+						</div>
+						<div class="player player3">
+							<h3>Name of Drunk 3?</h3>
+							<input type="text" name="name3" class="player3">
+						</div>
+					</div>
+					<!-- <button class="nextButton">Next</button> -->
+					<button class="nextButton"><a href="#next2" class="2">Next</a></button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- Section typeDrink -->
+	<section class="typeDrink" id="next2">
+		<div class="wrapper">
+			<h2>What are you drinking?</h2>
+			<ul class="drinkFlex"></ul>
+			<h3 class="choice"></h3>
+			<div class="flexButton">
+				<button class="startTheGame"><a href="#next3" class="3">Start the Game</a></button>
+			</div>
+		</div>
+	</section>
+	<!-- Section Questions: Game -->
+	<section class="questions" id="next3">
+		<div class="wrapper">
+			<h2 class="question">It's your turn,  <span class="whoPlays"></span></h2>
+			<h2 class="yourQuestion"></h2>
+			<div class="options flexOptions"></div>
+			<div class="flexButton">
+				<button class="ready begin" class="4">START THE GAME</button>
+			</div>
+			<div class="box_right">
+				<h3>Awesome! Your answer is correct!</h3>
+				<p>You're safe for now.</p>
+				<button class="ready readyBlack readyTomato">NEXT</button>
+			</div>
+			<div class="box_wrong">
+				<h3>Sorry, you blew it!</h3>
+				<p></p>
+				<button class="ready">NEXT</button>
+			</div>
+			<div class="box_stop">
+				<h3>It seems you are drunk enough. Thanks for playing!</h3>
+				<button class="close">CLOSE THE BAR</button>
+			</div>
+			<div class="flexButton">
+				<button class="endGame">End Game</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- <footer>
+		<p>Made by Stacie Campbell & Tavo Asenjo</p>
+	</footer> -->
+
+	<!-- Beer icon provided by Edward Boatman from The Noun Project
+	Wine icon provided by Gabriele Malaspina from The Noun Project
+	Shot icon provided by Andrew McKinley from The Noun Project
+	Thank you!! -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="js/jqueryul.js"></script>	
+<script src="js/script.js"></script>
+</body>
+</html>
